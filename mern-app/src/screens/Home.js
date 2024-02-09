@@ -1,0 +1,26 @@
+import React from 'react'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
+import Card from '../components/card'
+import Carousel from '../components/Carousel'
+export default function Home() {
+    return (
+        <div>
+            <div> <Navbar/> </div>
+            <div><Carousel/></div>
+            <div className='d-flex' style= {{'justifyContent' : 'space-evenly'}}>
+            <div><Card/></div>
+            <div><Card/></div>
+            <div><Card/></div>
+            </div>
+            <div className='d-flex' style= {{'justifyContent' : 'space-evenly'}}>
+            <div><Card/></div>
+            <div><Card/></div>
+            <div><Card/></div>
+            </div>
+
+
+            <div><Footer/></div>
+        </div>
+    )
+}
