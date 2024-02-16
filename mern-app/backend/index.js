@@ -1,13 +1,13 @@
 
 const express = require('express')
 const app = express()
-const port = 3000
+const port = 4000
 
 const connectToMongoDB = require("./db");
 connectToMongoDB();
 
 app.get('/', (req, res) => {
-    res.send('Hello World!')
+    res.send('Hello World! boys')
 })
 
 app.listen(port, () => {
